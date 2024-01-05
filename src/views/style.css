@@ -239,3 +239,16 @@
         transform: rotate(360deg);
     }
 }
+@media screen and (max-width: 400px) {
+    .statistic.profile .stat .profile .item h3 {
+        width: 100px;
+    }
+    .statistic.setting .edit form.active{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 343px) {
+    .statistic.profile .profile.geo h3{
+        font-size: 2rem;
+    }
+}

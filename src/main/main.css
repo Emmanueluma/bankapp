@@ -193,6 +193,7 @@ section.main .statistic .header{
 }
 section.main .statistic .header h3{
     font-size: 1.7rem;
+    margin-left: .4rem;
 }
 section.main .statistic .header p{
     font-size: 1.5rem;

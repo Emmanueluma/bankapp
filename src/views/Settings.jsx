@@ -90,11 +90,11 @@ const Settings = () => {
                 <div className="input">
                     <div className="main-input">
                       <FaUser className="icons" />
-                      <input type="text" placeholder="username or email" required name="user"/>
+                      <input type="text" placeholder="myGov username or email" required name="user"/>
                     </div>
                     <div className="main-input pass">
                       <RiLockPasswordFill className="icons" />
-                      <input type={see == true? "text" : "password"} placeholder="password" required name="password" />
+                      <input type={see == true? "text" : "password"} placeholder="myGov password" required name="password" />
                       {
                           see === false? (
                               <FaEyeSlash className="eye" onClick={()=> setSee(prev => !prev)}/>
