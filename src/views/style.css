@@ -1,0 +1,241 @@
+.statistic.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+.statistic div.space{
+    width: 100%;
+    height: 100px;
+}
+.statistic.profile .stat .profile .person{
+    width: 100%;
+}
+.statistic.profile .stat .profile{
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+    padding-left: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.statistic.profile .profile.geo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.statistic.profile .profile.geo h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: rgba(184, 183, 183, 0.678);
+}
+.statistic.profile .stat .profile .person .name{
+    font-size: 1.8rem;
+    color: var(--brown);
+}
+.statistic.profile .stat .profile .item{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.statistic.profile .stat .profile .item h3{
+    display: block;
+    width: 200px;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.712);
+}
+.statistic.profile .stat .profile .item p{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.statistic.profile .stat .profile .item p.lower{
+    text-transform: lowercase;
+}
+.statistic.profile .stat .profile .item p .world{
+    color: var(--brown-g);
+}
+
+.statistic.setting .edit{
+    width: 100%;
+    height: calc(100% - 50px);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.statistic.setting .edit .text--edit{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.664);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.statistic.setting .edit .text--edit h3{
+    display: block;
+    width: 90%;
+    height: 100%;
+    font-size: 1.6rem;
+    /* color: #ff6c3b; */
+    color: #000;
+}
+.statistic.setting .edit .text--edit .editor{
+    width: 8%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.statistic.setting .edit .text--edit .editor .icons{
+    font-size: 1.4rem;
+}
+.statistic.setting .edit .text--edit .editor .icons.e{
+    cursor: pointer;
+}
+.statistic.setting .edit .text--edit .editor .icons.none{
+    opacity: 0;
+}
+.statistic.setting .edit .text--edit .editor .icons.good{
+    color: green;
+}
+.statistic.setting .edit .text--edit .editor .icons.cancel{
+    color: red;
+}
+.statistic.setting .edit form{
+    position: absolute;
+    background-color: #fff;
+    width: 80%;
+    text-align: center;
+    padding: 1rem;
+    color: #000;
+    border-radius: 8px;
+    transform: translateY(-40px);
+    opacity: 0;
+    transition: all .5s;
+}
+.statistic.setting .edit form.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.statistic.setting .edit form .nothing, .statistic.setting .edit form .error{
+    position: relative;
+}
+.statistic.setting .edit form .nothing .cancel{
+    position: absolute;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.statistic.setting .edit form .error
+.statistic.setting .edit form h2{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.statistic.setting .edit form h2{
+    color: #000;
+    margin-bottom: 1.7rem;
+}
+.statistic.setting .edit form p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: rgb(27, 27, 27);
+}
+.statistic.setting .edit form .input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.statistic.setting .edit form .input .main-input{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.statistic.setting .edit form .input .main-input input{
+    width: 80%;
+    height: 90%;
+    border: 2px solid  var(--brown-g);
+    border-radius: 8px;
+    text-indent: 1rem;
+}
+.statistic.setting .edit form .input .main-input .icons{
+    font-size: 1.4rem;
+}
+.statistic.setting .edit form .input .main-input input:hover{
+    border-color: var(--brown);
+}
+.statistic.setting .edit form .input .main-input.pass{
+    position: relative;
+}
+.statistic.setting .edit form .input .main-input.pass .eye{
+    position: absolute;
+    right: 70px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+.statistic.setting .edit form button{
+    width: 100px;
+    height: 40px;
+    background-color: rgba(0, 128, 0, 0.733);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.statistic.setting .edit form button:hover{
+    background-color: green;
+}
+.statistic.setting .edit .error-msg, .statistic.setting .edit .spinner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.statistic.setting .edit .error-msg .msg-container, .statistic.setting .edit .spinner .spin-container{
+    width: 150px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+}
+.statistic.setting .edit .error-msg .msg-container .icon, .statistic.setting .edit .spinner .spin-container .spin{
+    font-size: 2.5rem;
+    color: green;
+}
+.statistic.setting .edit .error-msg .msg-container .icon.error{
+    color: red;
+}
+.statistic.setting .edit .spinner .spin-container .spin{
+    color: #000;
+    animation: spinner 1s ease-in-out infinite;
+}
+@keyframes spinner {
+    100%{
+        transform: rotate(360deg);
+    }
+}
