@@ -46,3 +46,111 @@ main{
     justify-content: space-between;
     align-items: center;
 }
+section.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+section.login .login--container{
+    width: 550px;
+    height: 400px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px;
+    padding-bottom: 1rem;
+    box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.123);
+}
+section.login .login--container .item.one{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section.login .login--container .item.one .logoimg{
+    height: 80px;
+    width: 150px;
+}
+section.login .login--container .item.one .logoimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+section.login .login--container .item.one h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+section.login .login--container .item.one p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(131, 131, 131);
+}
+section.login .login--container .item.two{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+section.login .login--container .item.two .input--field{
+    width: 350px;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section.login .login--container .item.two .input--field .icons{
+    font-size: 1.2rem;
+    color: var(--brown);
+}
+section.login .login--container .item.two .input--field input{
+    width: 92%;
+    height: 100%;
+    text-indent: 1rem;
+    border: 2px solid  var(--brown-g);
+}
+section.login .login--container .item.two .input--field input:hover{
+    border-color: var(--brown);
+}
+section.login .login--container .item.two .input--field.forget{
+    padding-right: 1rem;
+    display: flex;
+    justify-content: right;
+}
+section.login .login--container .item.two .input--field.forget p{
+    font-size: 1.1rem;
+    text-decoration: underline;
+    font-weight: 700;
+    color: var(--brown-g);
+}
+section.login .login--container .item.two .input--field.forget p:hover{
+    color: var(--brown);
+}
+section.login .login--container .item.two .btn{
+    width: 200px;
+    height: 70px;
+    background-color: #ffbf2a;
+    border-radius: 5px;
+}
+section.login .login--container .item.two p{
+    font-weight: 700;
+    color: rgb(131, 131, 131);
+}
+@media screen and (max-width: 550px) {
+    section.login .login--container{
+        width: 100%;
+        box-shadow: 0 0 3px 4px transparent;
+    }
+}
+@media screen and (max-width: 350px) {
+    section.login .login--container .item.two .input--field{
+        width: 90%;
+    }
+}
